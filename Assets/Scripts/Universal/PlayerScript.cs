@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
     public Text text;
 
     [SerializeField]
-    private Rigidbody2D rb2d;
+    private Rigidbody rb2d;
 
     bool left = false;
     bool right = false;
@@ -38,13 +38,13 @@ public class PlayerScript : MonoBehaviour
     [SerializeField]
     private float rayDistance;
 
-    public Vector2 lookDirection;
+    public Vector3 lookDirection;
 
     void Start()
     {
         pos = transform.position;          // Take the initial position
         anim = GetComponent<Animator>();
-        rb2d = GetComponent<Rigidbody2D>();
+        rb2d = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
@@ -62,7 +62,7 @@ public class PlayerScript : MonoBehaviour
                 right = false;
                 up = false;
                 down = false;
-                lookDirection = Vector2.left;
+                lookDirection = Vector3.left;
             }
 
             if (Input.GetKey(KeyCode.RightArrow) && transform.position == pos && talkingToNPC == false)
@@ -77,7 +77,7 @@ public class PlayerScript : MonoBehaviour
             left = false;
             up = false;
             down = false;
-            lookDirection = Vector2.right;
+            lookDirection = Vector3.right;
 
 
         }
@@ -87,14 +87,14 @@ public class PlayerScript : MonoBehaviour
                 anim.Play("ForwardStill");
                 if (Input.GetKey(KeyCode.UpArrow) && up == true)
                 {
-                    pos += Vector3.up;
+                    pos += Vector3.forward;
                     anim.SetBool("Up", true);
                 }
                 up = true;
                 left = false;
                 right = false;
                 down = false;
-                lookDirection = Vector2.up;
+                lookDirection = Vector3.forward;
             }
         
             if (Input.GetKey(KeyCode.DownArrow) && transform.position == pos && talkingToNPC == false)
@@ -102,14 +102,14 @@ public class PlayerScript : MonoBehaviour
                 anim.Play("DownStill");
                 if (Input.GetKey(KeyCode.DownArrow) && down == true)
                 {
-                    pos += Vector3.down;
+                    pos += Vector3.back;
                     anim.SetBool("Down", true);
                 }
                 down = true;
                 left = false;
                 up = false;
                 right = false;
-                lookDirection = Vector2.down;
+                lookDirection = Vector3.forward;
             }
         
 
@@ -130,10 +130,10 @@ public class PlayerScript : MonoBehaviour
         if (transform.position == pos && Input.GetKeyDown(KeyCode.Return))
         {
             // Cast a ray 1 Unity Unit in the lookDirection
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, lookDirection, rayDistance);
+            RaycastHit hit; 
 
             // If it hits an NPC...
-            if (hit.collider.gameObject.CompareTag("TalkNPC"))
+            if (Physics.Raycast(transform.position, lookDirection, out hit, rayDistance) && hit.collider.tag == "NPC")
             {
                 text.enabled = true;
                 talkingToNPC = true;

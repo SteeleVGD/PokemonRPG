@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7BB1C478-B3E4-C7E6-00FA-0B859CCD2503}</ProjectGuid>
+    <ProjectGuid>{A1739324-8508-E57F-2A13-01CE8D71B9FA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -68,43 +68,43 @@
     <Compile Include="Assets\Assets\Resources\BattleBackgrounds\Editor\EventHandlerTest.cs" />
     <Compile Include="Assets\Assets\Resources\BattleBackgrounds\Editor\NewEditModeTest.cs" />
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -305,22 +305,22 @@
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Assets/Scenes/ScriptAssemblies/Assembly-CSharp.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Assets/Scenes/ScriptAssemblies/Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-Editor">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Assets/Scenes/ScriptAssemblies/Assembly-CSharp-Editor.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Assets/Scenes/ScriptAssemblies/Assembly-CSharp-Editor.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Assets/Assets/Plugins/DOTween.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Assets/Assets/Plugins/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Assets/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Assets/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenEditor">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Assets/Assets/Editor/DOTweenEditor.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Assets/Assets/Editor/DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>/Users/leety866/Desktop/pokemon bow and arrow/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>/Users/nitscheja785/Documents/GitHub/PokemonRPG/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -685,7 +685,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{06477A89-13D3-3A2D-17A6-DE974A8D0390}</Project>
+      <Project>{2BF13F95-F40B-3FB1-9638-2F238FBC524F}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>
