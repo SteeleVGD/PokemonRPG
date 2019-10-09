@@ -109,7 +109,7 @@ MonoBehaviour:
   x1: 0
   doneTalkingInt1: 0
   rayDistance: 1
-  lookDirection: {x: 0, y: 0}
+  lookDirection: {x: 0, y: 0, z: 0}
 --- !u!50 &3435048713976217918
 Rigidbody2D:
   serializedVersion: 4
