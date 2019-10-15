@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 266266536}
   - component: {fileID: 266266537}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 1160889771}
   - component: {fileID: 1160889770}
   - component: {fileID: 1160889773}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: npcOldMan
   m_TagString: NPC
   m_Icon: {fileID: 0}

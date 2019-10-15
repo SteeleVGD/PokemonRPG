@@ -11,6 +11,10 @@ public class PlayerScript : MonoBehaviour
 
     public Animator anim;
 
+    public bool talks;
+    public string message;
+    //https://www.youtube.com/watch?v=N_0fyhmoZ0Y
+
     public Text text;
 
     [SerializeField]
@@ -39,6 +43,8 @@ public class PlayerScript : MonoBehaviour
     private float rayDistance;
 
     public Vector3 lookDirection;
+
+    int layerMask = 1 << 9;
 
     void Start()
     {
@@ -127,18 +133,17 @@ public class PlayerScript : MonoBehaviour
             anim.SetBool("Right", false);
         }
 
-        //if (transform.position == pos && Input.GetKeyDown(KeyCode.Return))
-        //{
-        //    // Cast a ray 1 Unity Unit in the lookDirection
-        //    RaycastHit hit; 
+        if (transform.position == pos && Input.GetKeyDown(KeyCode.Return))
+        {
+            RaycastHit hit;
 
-        //    // If it hits an NPC...
-        //    if (Physics.Raycast(transform.position, lookDirection, out hit, rayDistance) && hit.collider.tag == "NPC")
-        //    {
-        //        text.enabled = true;
-        //        talkingToNPC = true;
-        //    }
-        //}
+            // If it hits an NPC...
+            if (Physics.Raycast(transform.position, transform.TransformDirection(lookDirection), out hit, rayDistance, layerMask))
+                { 
+                text.enabled = true;
+                talkingToNPC = true;
+            }
+        }
 
      }
 
