@@ -912,12 +912,12 @@ PrefabInstance:
     - target: {fileID: 3435048713976217889, guid: 0617b736dbfb94cd896adb8a30304d04,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3435048713976217889, guid: 0617b736dbfb94cd896adb8a30304d04,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.85
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3435048713976217889, guid: 0617b736dbfb94cd896adb8a30304d04,
         type: 3}
@@ -964,41 +964,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3435048713976217889, guid: 0617b736dbfb94cd896adb8a30304d04,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435048713976217889, guid: 0617b736dbfb94cd896adb8a30304d04,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3435048713976217919, guid: 0617b736dbfb94cd896adb8a30304d04,
         type: 3}
       propertyPath: text
       value: 
       objectReference: {fileID: 1185130280}
-    - target: {fileID: 3435048713976217888, guid: 0617b736dbfb94cd896adb8a30304d04,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 4530558613398863430, guid: e43f0a634d8a44e76991889239c4298b,
-        type: 3}
-    - target: {fileID: 3435048713976217888, guid: 0617b736dbfb94cd896adb8a30304d04,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435048713976217888, guid: 0617b736dbfb94cd896adb8a30304d04,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3435048713976217888, guid: 0617b736dbfb94cd896adb8a30304d04,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0617b736dbfb94cd896adb8a30304d04, type: 3}
