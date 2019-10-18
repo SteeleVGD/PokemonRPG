@@ -25,6 +25,7 @@ public class PlayerScript : MonoBehaviour
     bool up = false;
     bool down = false;
 
+    public Vector3 transformVector;
     public Vector3 rayVectorAid = Vector3.zero;
     float Vectorx;
     float Vectorz;
@@ -55,6 +56,7 @@ public class PlayerScript : MonoBehaviour
         pos = transform.position;          // Take the initial position
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody>();
+        transformVector = transform.position;
     }
 
     void FixedUpdate()
@@ -73,7 +75,7 @@ public class PlayerScript : MonoBehaviour
                 up = false;
                 down = false;
                 rayVectorAid = transform.position;
-                Vectorx = -4f;
+                Vectorx = -0.5f;
                 rayVectorAid.x = rayVectorAid.x + Vectorx;
                 lookDirection = Vector3.left;
             }
@@ -91,7 +93,7 @@ public class PlayerScript : MonoBehaviour
             up = false;
             down = false;
             rayVectorAid = transform.position;
-            Vectorx = 4f;
+            Vectorx = 0.5f;
             rayVectorAid.x = rayVectorAid.x + Vectorx;
             lookDirection = Vector3.right;
 
@@ -111,7 +113,7 @@ public class PlayerScript : MonoBehaviour
                 right = false;
                 down = false;
                 rayVectorAid = transform.position;
-                Vectorz = 4f;
+                Vectorz = 0.5f;
                 rayVectorAid.z = rayVectorAid.z + Vectorz;
                 lookDirection = Vector3.forward;
             }
@@ -129,7 +131,7 @@ public class PlayerScript : MonoBehaviour
                 up = false;
                 right = false;
                 rayVectorAid = transform.position;
-                Vectorz = -4f;
+                Vectorz = -0.5f;
                 rayVectorAid.z = rayVectorAid.z + Vectorz;
                 lookDirection = Vector3.back;
             }
@@ -149,19 +151,6 @@ public class PlayerScript : MonoBehaviour
             anim.SetBool("Right", false);
         }
 
-        if (transform.position == pos && Input.GetKeyDown(KeyCode.Return))
-        {
-            RaycastHit hit;
-
-            // If it hits an NPC...
-            if (Physics.Raycast(rayVectorAid, transform.TransformDirection(lookDirection), out hit, rayDistance, layerMask))
-                {
-                rayVectorAid = Vector3.zero;
-                text.enabled = true;
-                talkingToNPC = true;
-            }
-        }
-
      }
 
 
@@ -169,6 +158,19 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            RaycastHit hit;
+
+            // If it hits an NPC...
+            if (Physics.Raycast(rayVectorAid, transform.TransformDirection(lookDirection), out hit, rayDistance/*, layerMask*/))
+            {
+                Debug.Log("Thing");
+                text.enabled = true;
+                talkingToNPC = true;
+            }
+        }
 
         if (talkingToNPC)
         {
