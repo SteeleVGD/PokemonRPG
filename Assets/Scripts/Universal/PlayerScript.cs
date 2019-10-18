@@ -74,7 +74,7 @@ public class PlayerScript : MonoBehaviour
                 down = false;
                 rayVectorAid = transform.position;
                 Vectorx = -4f;
-                rayVectorAid.z = rayVectorAid.z + Vectorz;
+                rayVectorAid.x = rayVectorAid.x + Vectorx;
                 lookDirection = Vector3.left;
             }
 
@@ -90,6 +90,9 @@ public class PlayerScript : MonoBehaviour
             left = false;
             up = false;
             down = false;
+            rayVectorAid = transform.position;
+            Vectorx = 4f;
+            rayVectorAid.x = rayVectorAid.x + Vectorx;
             lookDirection = Vector3.right;
 
 
@@ -107,6 +110,9 @@ public class PlayerScript : MonoBehaviour
                 left = false;
                 right = false;
                 down = false;
+                rayVectorAid = transform.position;
+                Vectorz = 4f;
+                rayVectorAid.z = rayVectorAid.z + Vectorz;
                 lookDirection = Vector3.forward;
             }
         
@@ -122,6 +128,9 @@ public class PlayerScript : MonoBehaviour
                 left = false;
                 up = false;
                 right = false;
+                rayVectorAid = transform.position;
+                Vectorz = -4f;
+                rayVectorAid.z = rayVectorAid.z + Vectorz;
                 lookDirection = Vector3.back;
             }
         
@@ -146,7 +155,8 @@ public class PlayerScript : MonoBehaviour
 
             // If it hits an NPC...
             if (Physics.Raycast(rayVectorAid, transform.TransformDirection(lookDirection), out hit, rayDistance, layerMask))
-                { 
+                {
+                rayVectorAid = Vector3.zero;
                 text.enabled = true;
                 talkingToNPC = true;
             }
