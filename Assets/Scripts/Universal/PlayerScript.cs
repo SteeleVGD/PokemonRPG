@@ -11,8 +11,8 @@ public class PlayerScript : MonoBehaviour
 
     public Animator anim;
 
-    public bool talks;
-    public string message;
+    //public bool talks;
+    //public string message;
     //https://www.youtube.com/watch?v=N_0fyhmoZ0Y
 
     public Text text;
@@ -24,6 +24,10 @@ public class PlayerScript : MonoBehaviour
     bool right = false;
     bool up = false;
     bool down = false;
+
+    public Vector3 rayVectorAid = Vector3.zero;
+    float Vectorx;
+    float Vectorz;
 
     [SerializeField]
     bool talkingToNPC = false;
@@ -68,6 +72,9 @@ public class PlayerScript : MonoBehaviour
                 right = false;
                 up = false;
                 down = false;
+                rayVectorAid = transform.position;
+                Vectorx = -4f;
+                rayVectorAid.z = rayVectorAid.z + Vectorz;
                 lookDirection = Vector3.left;
             }
 
@@ -115,7 +122,7 @@ public class PlayerScript : MonoBehaviour
                 left = false;
                 up = false;
                 right = false;
-                lookDirection = Vector3.forward;
+                lookDirection = Vector3.back;
             }
         
 
@@ -138,7 +145,7 @@ public class PlayerScript : MonoBehaviour
             RaycastHit hit;
 
             // If it hits an NPC...
-            if (Physics.Raycast(transform.position, transform.TransformDirection(lookDirection), out hit, rayDistance, layerMask))
+            if (Physics.Raycast(rayVectorAid, transform.TransformDirection(lookDirection), out hit, rayDistance, layerMask))
                 { 
                 text.enabled = true;
                 talkingToNPC = true;
